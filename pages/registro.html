@@ -18,12 +18,88 @@
 
     </nav>
 
+    <form>
+        <!-- Datos Personales -->
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label>Nombre y Apellido: <input type="text" name="nombre" required></label>
+            <label>Email: <input type="email" name="email" required></label>
+            <label>Contraseña: <input type="password" name="password" minlength="6" required></label>
+            <label>Fecha de Nacimiento: <input type="date" name="fecha_nacimiento" required></label>
+        </fieldset>
+
+        <!-- Información de Contacto -->
+        <fieldset>
+            <legend>Información de Contacto</legend>
+            <label>Teléfono: <input type="tel" name="telefono" required></label>
+            <label>Dirección: <input type="text" name="direccion" required></label>
+        </fieldset>
+
+        <!-- Preferencias del Evento -->
+        <fieldset>
+            <legend>Preferencias del Evento</legend>
+            <label>País:
+                <select name="pais" required>
+                    <option value="">Seleccione...</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="mexico">México</option>
+                    <option value="espana">España</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="chile">Chile</option>
+                    <option value="peru">Perú</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>Talleres</legend>
+                <div class="talleres-container">
+                    <label><input type="checkbox" name="talleres" value="web"> Desarrollo Web</label>
+                    <label><input type="checkbox" name="talleres" value="ai"> Inteligencia Artificial</label>
+                    <label><input type="checkbox" name="talleres" value="diseno"> Diseño</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Sesión Principal</legend>
+                <label><input type="radio" name="sesion" value="matutina" required> Matutina</label>
+                <label><input type="radio" name="sesion" value="vespertina"> Vespertina</label>
+            </fieldset>
+        </fieldset>
+
+        <!-- Subir archivo -->
+        <fieldset>
+            <legend>Subir archivo</legend>
+            <label>Adjuntar CV o Portafolio: <input type="file" name="archivo" required></label>
+        </fieldset>
+
+        <!-- Comentarios adicionales -->
+        <fieldset>
+            <legend>Comentarios adicionales</legend>
+            <label><textarea name="comentarios" rows="4" placeholder="Escriba sus comentarios..."></textarea></label>
+        </fieldset>
+
+        <!-- Información de Pago -->
+        <fieldset>
+            <legend>Información de Pago</legend>
+            <label>Número de Tarjeta de Crédito:
+                <input type="text" name="tarjeta" pattern="\d{16}" placeholder="16 dígitos" required>
+            </label>
+            <label>Fecha de Expiración: <input type="month" name="expiracion" required></label>
+            <button type="submit" class="submit-btn">Enviar</button>
+            <button type="reset" class="reset-btn">Reiniciar</button>
+        </fieldset>
+
+        <!-- Botones -->
+    </form>
+</body>
+</html>
+
+        
 
 
-    <footer class="footer">
-        &copy; 2025 Convención Internacional. Todos los derechos reservados.
-    </footer>
 
+
+        <footer class="footer">
+            &copy; 2025 Convención Internacional. Todos los derechos reservados.
+        </footer>
 
     
     

@@ -4,7 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: rgb(255, 255, 255);
+    
 }
 .navbar {
     background-color: #002244;
@@ -13,6 +14,10 @@ body {
     align-items: center;
     padding: 15px 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+.navbar:hover {
+    background-color: #003366;
 }
 .navbar a {
     color: white;
@@ -25,9 +30,16 @@ body {
     background-color: #004488;
 }
 .logo {
-    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
+}
+.logo img {
+    height: 40px;
+    width: auto;
 }
 .nav-links {
     display: flex;
@@ -49,4 +61,164 @@ body {
 }
 .imagenes{
     width: 4%;
+}
+
+
+/* From Uiverse.io by lukepadiachy */ 
+.my-loader {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 100px auto;
+  }
+  
+  .rubiks-cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: my-rotateCube 5s infinite linear;
+  }
+  
+  .my-loader .face {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .my-loader .face.front {
+    transform: translateZ(100px);
+  }
+  .my-loader .face.back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  .my-loader .face.left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  .my-loader .face.right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  .my-loader .face.top {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  .my-loader .face.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  
+  .my-loader .cube {
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    box-sizing: border-box;
+    border: 1px solid #000;
+  }
+  
+  @keyframes my-rotateCube {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+
+
+
+
+
+
+.imagenc {
+    height: 800px;
+    width: 1335px;
+    margin: 0%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 0px;
+    padding-top: 1px ;
+}
+.foto {
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+
+
+form {
+    align-items: center;
+    background: white;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+fieldset {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+legend {
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin-top: 0px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+.reset-btn {
+    background-color: #dc3545;
+    color: white;
+}
+.talleres-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
 }
