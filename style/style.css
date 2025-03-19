@@ -128,49 +128,48 @@ body {
 
 
 
-.imagenc {
+.imagence {
     height: 800px;
     width: 1335px;
     margin: 0%;
+    border-radius: 5px;
+    margin-left: 100%;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 570px);
+    grid-template-columns: repeat(2, 600px);
     column-gap: 0px;
     padding-top: 1px ;
-}
-.foto {
-    height: 300px;
-    border-radius: 50%;
 }
 
 
 
 
 form {
-    align-items: center;
     background: white;
-    padding: 0px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 fieldset {
-    margin-bottom: 5px;
-    padding: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
     border-radius: 5px;
 }
 legend {
     font-weight: bold;
 }
 label {
-    display: block;
-    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 input, select, textarea {
     width: 100%;
     padding: 8px;
-    margin-top: 0px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -191,8 +190,21 @@ button {
 }
 .talleres-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sesion-container {
+    display: flex;
+    justify-content: space-around;
+}
+.sesion-container label {
+    display: flex;
+    align-items: center;
     gap: 5px;
+}
+.sesion-container input[type="radio"] {
+    margin-right: 50px;
 }
 
 
@@ -221,4 +233,34 @@ tr:nth-child(even) {
 }
 tr:hover {
     background-color: #ddd;
+}
+
+
+
+
+
+.image-container {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    width: 80%;
 }
