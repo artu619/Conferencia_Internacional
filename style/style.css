@@ -4,11 +4,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #035cb6;;
     
 }
 .navbar {
-    background-color: #002244;
+    background-color: #035cb6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@ body {
     transition: background 0.3s ease;
 }
 .navbar:hover {
-    background-color: #003366;
+    background-color: #02704f;
 }
 .navbar a {
     color: white;
@@ -33,17 +33,17 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
-    color: white;
+    color: rgb(248, 248, 248);
 }
 .logo img {
-    height: 40px;
+    height: 45px;
     width: auto;
 }
 .nav-links {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 .footer {
     background-color: #002244;
@@ -56,11 +56,13 @@ body {
 
 .introduccion {
     text-align: justify;
+  
+    
 
 
 }
 .imagenes{
-    width: 4%;
+    width: 6%;
 }
 
 
@@ -130,86 +132,109 @@ body {
 
 .imagence {
     height: 800px;
-    width: 1335px;
+    width: 601px;
     margin: 0%;
-    border-radius: 5px;
-    margin-left: 100%;
+    border-radius: 15px;
+    margin-left: 100px;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 600px);
-    column-gap: 0px;
-    padding-top: 1px ;
+    grid-template-columns: repeat(3, 600px);
+    column-gap: 1px;
+    padding-top: 12px ;
+    
+
+    
+
 }
 
 
 
 
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+.form-container {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 950px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 fieldset {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
+  margin-bottom: 11px;
+  padding: 8px;
+  border-radius: 5px;
 }
 legend {
-    font-weight: bold;
+  font-weight: bold;
 }
 label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
 }
 input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 6px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  
 }
 button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-top: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .submit-btn {
-    background-color: #28a745;
-    color: white;
+  background-color: #28a745;
+  color: white;
 }
 .reset-btn {
-    background-color: #dc3545;
-    color: white;
+  background-color: #dc3545;
+  color: white;
 }
-.talleres-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-}
+.talleres-container,
 .sesion-container {
-    display: flex;
-    justify-content: space-around;
-}
-.sesion-container label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.sesion-container input[type="radio"] {
-    margin-right: 5px;
-}
-.short-input {
-    width: 21%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  
 }
 
+.talleres-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  width: 0%;
+  
+
+}
+.sesion-radio {
+  display: flex;
+
+  justify-content: flex-start;
+  
+
+}
+
+.talleres-container label,
+.sesion-container label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.short-input {
+  width: 20%;
+}
 
 
 table {
@@ -229,6 +254,7 @@ th, td {
 th {
     background-color: #007bff;
     color: white;
+    text-align: center;
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
@@ -236,37 +262,40 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ddd;
 }
+#eventosl {
+  text-align: center;
+  color: white;
+}
 
 
 
 
 
 .image-container {
-    position: relative;
-    display: block;
-    width: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
 }
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
+.image-container .imgen1 {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  width: 80%;
 }
-
 
 
 

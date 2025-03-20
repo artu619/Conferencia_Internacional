@@ -9,6 +9,7 @@
 <body>
     <header>
         <nav class="navbar">
+            <img class="imagenes" src="/images/tecnologico.png">
             <div class="logo"><a href="../index.html">Conferencia Internacional 2025</a></div>
             <div class="nav-links">
                 <a href="../index.html">Inicio</a>
@@ -18,101 +19,87 @@
 
     </nav>
 
-    <form>
-        <!-- Datos Personales -->
-        <fieldset>
-            <legend>Datos Personales</legend>
-            <label>Nombre: <input type="text" name="nombre" required></label>
-            <label>Apellido: <input type="text" name="apellido" required></label>
-            <label>Email: <input type="email" name="email" required></label>
-            <label>Contraseña: <input type="password" name="password" minlength="6" required></label>
-            <label>Fecha de Nacimiento: <input type="date" name="fecha_nacimiento" class="short-input" required></label>
-        </fieldset>
-
-        <!-- Información de Contacto -->
-        <fieldset>
-            <legend>Información de Contacto</legend>
-            <label>Teléfono: <input type="tel" name="telefono" required></label>
-            <label>Dirección: <input type="text" name="direccion" required></label>
-        </fieldset>
-
-        <!-- Preferencias del Evento -->
-        <fieldset>
-            <legend>Preferencias del Evento</legend>
-            <label>País:
-                <select name="pais" required>
-                    <option value="">Seleccione...</option>
-                    <option value="argentina">Argentina</option>
-                    <option value="mexico">México</option>
-                    <option value="espana">España</option>
-                    <option value="colombia">Colombia</option>
-                    <option value="chile">Chile</option>
-                    <option value="peru">Perú</option>
-                </select>
-            </label>
+    <div class="form-container">
+        <form>
             <fieldset>
-                <legend>Talleres</legend>
-                <div class="talleres-container">
-                    <label><input type="checkbox" name="talleres" value="web"> Desarrollo Web</label>
-                    <label><input type="checkbox" name="talleres" value="ai"> Inteligencia Artificial</label>
-                    <label><input type="checkbox" name="talleres" value="diseno"> Diseño</label>
-                </div>
+                <legend>Datos Personales</legend>
+                <label>Nombre: <input type="text" name="nombre" required></label>
+                <label>Apellido: <input type="text" name="apellido" required></label>
+                <label>Email: <input type="email" name="email" required></label>
+                <label>Contraseña: <input type="password" name="password" minlength="6" required></label>
+                <label>Fecha de Nacimiento: <input type="date" name="fecha_nacimiento" class="short-input" required></label>
             </fieldset>
             <fieldset>
-                <legend>Sesión Principal</legend>
-                <div class="sesion-container">
-                    <label><input type="radio" name="sesion" value="matutina" required> Matutina</label>
-                    <label><input type="radio" name="sesion" value="vespertina"> Vespertina</label>
-                </div>
+                <legend>Información de Contacto</legend>
+                <label>Teléfono: <input type="tel" name="telefono" required></label>
+                <label>Dirección: <input type="text" name="direccion" required></label>
             </fieldset>
-        </fieldset>
+            <fieldset>
+                <legend>Preferencias del Evento</legend>
+                <label>País:
+                    <select name="pais" required>
+                        <option value="">Seleccione...</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="mexico">México</option>
+                        <option value="espana">España</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="chile">Chile</option>
+                        <option value="peru">Perú</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Talleres</legend>
+                    <div class="talleres-container">
+                        <div class="talleres-checkbox">
+                            <label><input type="checkbox" name="talleres" value="web"> Desarrollo Web</label>
 
-        <!-- Subir archivo -->
-        <fieldset>
-            <legend>Subir archivo</legend>
-           <label class="custum-file-upload" for="file">enviar CV o portafolio
-            <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="" d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H7C7.55228 23 8 22.5523 8 22C8 21.4477 7.55228 21 7 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM14 15.5C14 14.1193 15.1193 13 16.5 13C17.8807 13 19 14.1193 19 15.5V16V17H20C21.1046 17 22 17.8954 22 19C22 20.1046 21.1046 21 20 21H13C11.8954 21 11 20.1046 11 19C11 17.8954 11.8954 17 13 17H14V16V15.5ZM16.5 11C14.142 11 12.2076 12.8136 12.0156 15.122C10.2825 15.5606 9 17.1305 9 19C9 21.2091 10.7909 23 13 23H20C22.2091 23 24 21.2091 24 19C24 17.1305 22.7175 15.5606 20.9844 15.122C20.7924 12.8136 18.858 11 16.5 11Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg>
-            </div>
-            <div class="text">
-            <span>Click to upload image</span>
-            </div>
-            <input type="file" id="file">
-        </label>
-        </fieldset>
+                        </div>
+                        <div class="talleres-checkbox">
+                            <label><input type="checkbox" name="talleres" value="ai"> Inteligencia Artificial</label>
 
-        <!-- Comentarios adicionales -->
-        <fieldset>
-            <legend>Comentarios adicionales</legend>
-            <label><textarea name="comentarios" rows="4" placeholder="Escriba sus comentarios..."></textarea></label>
-        </fieldset>
+                        </div>
+                        <div class="talleres-checkbox" >
+                            <label><input type="checkbox" name="talleres" value="diseno"> Diseño</label>
 
-        <!-- Información de Pago -->
-        <fieldset>
-            <legend>Información de Pago</legend>
-            <label>Número de Tarjeta de Crédito:
-                <input type="text" name="tarjeta" pattern="\d{16}" placeholder="16 dígitos" required>
-            </label>
-            <label>Fecha de Expiración: <input type="month" name="expiracion" class="short-input" required></label>
-            <button type="submit" class="submit-btn">Enviar</button>
-            <button type="reset" class="reset-btn">Reiniciar</button>
-        </fieldset>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sesión Principal</legend>
+                    <div class="sesion-container">
+                        <dic class="sesion-radio">
+                            
+                            <label><input type="radio" name="sesion" value="matutina" required> Matutina</label>
+                        </dic>
+                        <dic class="sesion-radio">
+                            <label><input type="radio" name="sesion" value="vespertina"> Vespertina</label>
 
-       
-    </form>
-</body>
-</html>
-
-        
-
-
-
-
-        <footer class="footer">
-            &copy; 2025 Convención Internacional. Todos los derechos reservados.
-        </footer>
-
-    
-    
+                        </dic>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Subir archivo</legend>
+                <label>Adjuntar CV o Portafolio: <input type="file" name="archivo" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios adicionales</legend>
+                <label><textarea name="comentarios" rows="3" placeholder="Escriba sus comentarios..."></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Información de Pago</legend>
+                <label>Número de Tarjeta de Crédito:
+                    <input type="text" name="tarjeta" pattern="\d{16}" placeholder="16 dígitos" required>
+                </label>
+                <label>Fecha de Expiración: <input type="month" name="expiracion" class="short-input" required></label>
+                <button type="reset" class="reset-btn">Reiniciar</button>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+            
+            <footer class="footer">
+                &copy; 2025 Convención Internacional. Todos los derechos reservados.
+            </footer>
 </body>
 </html>
