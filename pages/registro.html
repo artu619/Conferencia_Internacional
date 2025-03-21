@@ -26,7 +26,7 @@
                 <label>Nombre: <input type="text" name="nombre" required></label>
                 <label>Apellido: <input type="text" name="apellido" required></label>
                 <label>Email: <input type="email" name="email" required></label>
-                <label>Contraseña: <input type="text" name="password" minlength="6" pattern="[0-9a-fA-F]{4,8}"  required></label>
+                <label>Contraseña: <input type="password" name="password" minlength="6" pattern="[0-9a-fA-F]{4,8}"  required></label>
                 <label>Fecha de Nacimiento: <input type="date" name="fecha_nacimiento" class="short-input" required></label>
             </fieldset>
             <fieldset>
@@ -89,7 +89,7 @@
             <fieldset>
                 <legend>Información de Pago</legend>
                 <label>Número de Tarjeta de Crédito:
-                    <input type="text" name="tarjeta" pattern="\d{16}" placeholder="16 dígitos" required>
+                    <input type="text" name="tarjeta"  pattern="\d{16}" placeholder="16 dígitos" required>
                 </label>
                 <label>Fecha de Expiración: <input type="month" name="expiracion" class="short-input" required></label>
                 <button type="reset" class="reset-btn">Reiniciar</button>
